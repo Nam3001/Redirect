@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .circle {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            position: relative;
+            border: 1px #4f4e4e solid;
+            display: none;
+            margin: 10px;
+        }
+
+        .circle>span {
+            color: #333;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            color: #4f4e4e;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main style="height: 100vh;">
+        <div class="circle">
+            <span class="is-size-5">10</span>
+        </div>
+
+    </main>
+</body>
+<script>
+    const anchor = document.querySelector('button.button')
+    const countNumberElement = document.querySelector('.circle > span')
+    const circle = document.querySelector('div.circle')
+    const href = 'https://javhay.movie/em-thu-ky-rieng-dam-dang-va-ten-sep-doi-bai-cuong-dam/'
+
+    circle.style.display = 'block'
+    let count = 9
+    setInterval(() => {
+        countNumberElement.innerText = count
+        if (count == 0) {
+            window.location.href = href
+            return
+        }
+        count--;
+    }, 1000)
+
+</script>
+
+</html>

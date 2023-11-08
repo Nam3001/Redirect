@@ -2,8 +2,11 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.set('views', './src/views')
+app.set('view engine', 'ejs')
+
 app.get('/', (req, res) => {
-    res.send('<h1>Something went wrong!</h1>')
+    res.render('home')
 })
 
 app.get('/red', (req, res) => {
