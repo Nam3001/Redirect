@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
     res.send('<h1>Something went wrong!</h1>')
 })
 
-app.get('/redirect', (req, res) => {
+app.get('/red', (req, res) => {
     res.redirect(301, 'https://javhay.movie/em-thu-ky-rieng-dam-dang-va-ten-sep-doi-bai-cuong-dam/')
 })
 
