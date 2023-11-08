@@ -7,6 +7,10 @@
     <title>Surprise</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <style>
+        main {
+            position: relative
+        }
+
         .circle {
             border-radius: 50%;
             width: 80px;
@@ -15,15 +19,19 @@
             border: 1px #4f4e4e solid;
             display: none;
             margin: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            color: #4f4e4e;
         }
 
         .circle>span {
             color: #333;
+            left: 50%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             position: absolute;
-            color: #4f4e4e;
 
         }
     </style>
